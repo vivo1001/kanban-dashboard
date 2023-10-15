@@ -6,13 +6,13 @@ export const boardData = {
       cards: [
         {
           id: 1,
-          title: "Database Setup",
-          description: "Firebase Integration",
+          title: "CAM 1",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu. ",
         },
         {
           id: 2,
-          title: "Data Flow",
-          description: "Setup Diagram with other developers",
+          title: "CAM 2",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu. ",
         },
       ],
     },
@@ -22,8 +22,8 @@ export const boardData = {
       cards: [
         {
           id: 9,
-          title: "Data Table Page",
-          description: "Server side Pagination",
+          title: "CAM 3",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu. ",
         },
       ],
     },
@@ -33,14 +33,14 @@ export const boardData = {
       cards: [
         {
           id: 10,
-          title: "Full Calendar Extension",
-          description: "Make new events and store in global states",
+          title: "CAM 4",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu. ",
         },
         {
           id: 11,
-          title: "Custom Kanban Board",
+          title: "CAM 5",
           description:
-            "Setup react-kanban dep within Dashboard as seperate page",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu. ",
         },
       ],
     },
@@ -50,14 +50,14 @@ export const boardData = {
       cards: [
         {
           id: 12,
-          title: "Vite Server Setup",
-          description: "Configure required modules and starters",
+          title: "CAM 6",
+          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu. ",
         },
         {
           id: 13,
-          title: "Modular structre",
+          title: "CAM 7",
           description:
-            "Write css in form of modules to reduce the naming conflicts",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu. ",
         },
       ],
     },
@@ -67,14 +67,14 @@ export const boardData = {
       cards: [
         {
           id: 12,
-          title: "Vite Server Setup",
-          description: "Configure required modules and starters",
+          title: "CAM 8",
+          description: "Implement email notification system",
         },
         {
           id: 13,
-          title: "Modular structre",
+          title: "CAM 9",
           description:
-            "Write css in form of modules to reduce the naming conflicts",
+            "Optimize database queries for performance",
         },
       ],
     },
