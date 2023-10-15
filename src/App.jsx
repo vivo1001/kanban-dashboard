@@ -2,7 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import BoardPage from "./pages/Board/Board";
 
+
 const App = () => {
+  
   return (
     <div id="dashboard">
       <BrowserRouter>

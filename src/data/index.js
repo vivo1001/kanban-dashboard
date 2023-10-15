@@ -2,7 +2,7 @@ export const boardData = {
   columns: [
     {
       id: 1,
-      title: "Backlog",
+      title: "URGENT",
       cards: [
         {
           id: 1,
@@ -18,7 +18,7 @@ export const boardData = {
     },
     {
       id: 2,
-      title: "TODO",
+      title: "HIGH",
       cards: [
         {
           id: 9,
@@ -29,7 +29,7 @@ export const boardData = {
     },
     {
       id: 3,
-      title: "Doing",
+      title: "MEDIUM",
       cards: [
         {
           id: 10,
@@ -46,7 +46,7 @@ export const boardData = {
     },
     {
       id: 4,
-      title: "Completed",
+      title: "LOW",
       cards: [
         {
           id: 12,
@@ -61,6 +61,24 @@ export const boardData = {
         },
       ],
     },
+    {
+      id: 4,
+      title: "NO PRIORITY",
+      cards: [
+        {
+          id: 12,
+          title: "Vite Server Setup",
+          description: "Configure required modules and starters",
+        },
+        {
+          id: 13,
+          title: "Modular structre",
+          description:
+            "Write css in form of modules to reduce the naming conflicts",
+        },
+      ],
+    },
+   
   ],
 };
 

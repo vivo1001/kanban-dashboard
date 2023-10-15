@@ -8,8 +8,8 @@ import AddTaskModal from '../../components/AddTaskModal/AddTaskModal';
 import { useState } from 'react';
 
 const BoardPage = () => {
-    
-    const [modalOpened, setModalOpened] = useState(false)
+   
+const [modalOpened, setModalOpened] = useState(false)
     const { board, setBoard } = useBoard()
 
     const handleColumnMove = (_card, source, destination) => {
@@ -31,25 +31,30 @@ const BoardPage = () => {
     const getGradient = (card) => {
         const column = getColumn(card)
         const title = column.title
-        if (title === "TODO") {
+        if (title === "MEDIUM") {
             return {
                 background:
                     "linear-gradient(65.35deg, rgba(65, 65, 65, 0.67) -1.72%, rgba(48, 189, 220) 163.54%)",
             };
-        } else if (title === "Doing") {
+        } else if (title === "URGENT") {
             return {
                 background:
                     "linear-gradient(65.35deg, rgba(65, 65, 65, 0.67) -1.72%, rgba(220, 48, 48) 163.54%)",
             };
-        } else if (title === "Completed") {
+        } else if (title === "LOW") {
             return {
                 background:
                     "linear-gradient(65.35deg, rgba(65, 65, 65, 0.67) -1.72%, rgba(48, 220, 86) 163.54%)",
             };
-        } else if (title === "Backlog") {
+        } else if (title === "HIGH") {
             return {
                 background:
                     "linear-gradient(65.35deg, rgba(65, 65,65, 0.67) -1.72%,rgba(134, 48, 220) 163.54%)",
+            };
+        }else if (title === "NO PRIORITY") {
+            return {
+                background:
+                    "linear-gradient(65.35deg, rgba(65, 65,65, 0.67) -1.72%,#F1EFEF 163.54%)",
             };
         }
     }
@@ -58,7 +63,7 @@ const BoardPage = () => {
     return (
         <div className="board-container">
 
-            <span>Trello Board</span>
+            <span>Kanban Dashboard</span>
 
             <Board
                 allowAddColumn
@@ -72,7 +77,7 @@ const BoardPage = () => {
                             <span>
                                 {props.title}
                             </span>
-                            <button className='remove-button' type='button'
+                           <button className='remove-button' type='button'
                                 onClick={() => {
                                     const updatedBoard = removeCard(board,
                                         getColumn(props),
@@ -117,7 +122,7 @@ const BoardPage = () => {
                         </div>
                     )
                 }}
-
+ 
             >
                 {board}
             </Board>

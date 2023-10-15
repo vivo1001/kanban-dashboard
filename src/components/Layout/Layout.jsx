@@ -1,7 +1,6 @@
 import moment from "moment/moment";
 import React from "react";
 import styles from "./Layout.module.css";
-import { BiSearch } from "react-icons/bi";
 // import Sidebar from '../Sidebar/Sidebar';
 import { Outlet, useLocation, Navigate } from "react-router-dom";
 const Layout = () => {
@@ -13,9 +12,9 @@ const Layout = () => {
       {pathname === "/" && <Navigate to="/board" />}
       <div className={styles.dashboard}>
         <div className={styles.topBaseGradients}>
-          <div className="gradient-red"></div>
-          <div className="gradient-orange"></div>
           <div className="gradient-blue"></div>
+          <div className="gradient-orange"></div>
+          <div className="gradient-red"></div>
         </div>
 
         <div className={styles.header}>
